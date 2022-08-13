@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_master/ui/constants.dart';
 import 'package:flutter_application_master/ui/pages/home/home-page.dart';
 
 void main() {
@@ -13,10 +14,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
+        title: 'Flutter Master',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: HomePage());
+            primaryColor: BbwConstantes.bbwPrimaryColor,
+            scaffoldBackgroundColor: Colors.white,
+            textTheme: const TextTheme(
+                bodyText1: TextStyle(
+                  color: BbwConstantes.bbwSecondaryColor,
+                ),
+                bodyText2: TextStyle(
+                  color: BbwConstantes.bbwSecondaryColor,
+                ))),
+        home: const HomePage());
   }
 }
