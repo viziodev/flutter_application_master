@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_master/models/produit-model.dart';
 import 'package:flutter_application_master/ui/constants.dart';
+import 'package:flutter_application_master/ui/pages/detail/detail-page.dart';
 import 'package:flutter_svg/svg.dart';
 
 class ProduitItemHome extends StatelessWidget {
@@ -27,7 +28,13 @@ class ProduitItemHome extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () {},
+          onTap: () {
+            /* Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const DetailPage()),
+            );*/
+            Navigator.pushNamed(context, DetailPage.routeName);
+          },
           child: Padding(
             padding: EdgeInsets.all(10),
             child: Column(children: [

@@ -12,6 +12,7 @@ import 'package:flutter_application_master/ui/pages/home/components/search-box-h
 import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatelessWidget {
+    static final routeName ="/home";
   const HomePage({super.key});
 
   @override
